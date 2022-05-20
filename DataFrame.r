@@ -29,7 +29,7 @@ class(Col1)
 #Modificando o DF
 
 df $UP$
-summary(df $UP$)
+summary(df $UP)
 df $UP <- as.factor(df $UP)
 df $UP
 summary(df$UP)
