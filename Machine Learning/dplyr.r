@@ -12,12 +12,16 @@ df <- read.csv("FipePrevAjustada.csv", header = TRUE)
 
 View(df)
 
-
+install.packages("dplyr")
 #Média de preço dos carros por 0km  por marca
 
 ?filter
 ?group_by
 ?summarise
 
-MediaMarca <- df %>%
-    filter(Ano_modelo == "Zero KM") %>%
+MediaMarca <- df %>% #verificnado a média da marca
+    dplyr::filter(Ano_modelo == "Zero KM") %>% #filtrando somente os carros zero km
+    dplyr::group_by(Marca) %>%
+    dplyr::summarise(mean(preço)) #reduzindo a média do preço
+
+View(MediaMarca)
