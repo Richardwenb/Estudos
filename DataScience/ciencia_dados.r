@@ -44,18 +44,18 @@ ggplot(carros, aes(Cilindradas, Consumo,
     geom_point()
 
 ### Análise do Dataset ###
-
+#gráfico de consumos 
 carros$Consumo #Busca dados do consumo
 summary(carros$Consumo) #Busca estatisticas sobre o consumo
 table(carros$Consumo) #Puxando a tabela carros consumo
 prop.table(table(carros$Consumo)) #Verifica os dados percentualmente
 round(pro.table((carros$Consumo))*100) #Multiplicando por 100 e arredondando os dados
-
+#Geração do gráfico de consumos
 ggplot(carros, aes(Consumo)) + 
 geom_histogram() #Verifica a quantidade de dados existente em uma unica variavel]
 
 ### Manipulação dom dplyr ###
-
+#Trazendo a tabela e manipulando os dados conforme funções determinadas
 library(dplyr)
 
 #Apenas carros com consumo = 9
@@ -82,6 +82,7 @@ m %>% group_by(Marcas) %>% #Agrupando as marcas
 ### Árvore de Decisão
 
 #Consumo x Cilindradas x Tipo x Tração
+#Criando gráfico para Tipo, tração, cilindrada e consumo e mostrando resultados de cada um(Comparativos)
 ggplot(carros, aes(Cilindradas, Consumo)) + #Trazenndo gráfico
     geom_point(aes(size = Tração, color = Tipo)) +  #Tarzendo tração e tipo
     geom_smooth(method = "lm") # adicionando um metódo LM a função
@@ -111,6 +112,11 @@ ggplot(mapping = aes(peso, altura)) +
     geom_point() +
     geom_smooth(method = "lm") # ADICIONANDO A RETA MAIS BONITINHA
 
+#Exemplo de outro gráfico
+# graph <- ggplot(mtcars, aes(x=as.factor(cyl) )) +
+#   geom_bar(color="blue", fill=rgb(0.1,0.4,0.5,0.7) )
+
+View(graph)
 #Coeficiente de determinação R2
 #Reta média
 retas <- ggplot2(mapping = aes(peso, altura)) +
