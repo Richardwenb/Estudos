@@ -1,13 +1,18 @@
-#Data Frame
+install.packages("pandas")
+install.packages("tidyverse")
 
-#Definir area de trabalho
-setwd("C:/Users/richard.batista/Desktop/Estudo/Planilha_Marilan") #Definição de diretório que esta trabalhando # nolint
+setwd("C:/Users/richard.batista/Desktop/Estudo/Planilha_Marilan")
 
-#Importando base de dados
-df <- read.csv("Biscoitos.csv", header = TRUE) #importando arquivo csv
+df <- read.csv("Biscoitos.csv", header = TRUE )
 
 View(df)
 
+install.packages('dplyr')
 
-install.packages("magrittr")
-library(magrittr)
+df$FAMILIA
+Col1 <- df[1]
+Col2 <- df$MERCADO
+
+class(df$MERCADO)
+
+print(Col1)
