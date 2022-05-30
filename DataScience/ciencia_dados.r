@@ -13,9 +13,9 @@ install.packages(c("ggplot2", "plyr", "dplyr"))
 
 library(ggplot2)
 
-mpg
+mpg #Mpg é uma medida padronizada serve comparar carros com base na sua eficiência.
 ?mpg
-View(mpg)
+View(mpg) 
 
 #Gerando um gráfico
 ggplot(mpg, aes((displ, cty))) + #ggplot informa o datasete e aes informa os valores que existem no eixo x e eixo y # nolint
