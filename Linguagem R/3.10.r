@@ -5,4 +5,8 @@ class(airquality$Ozone)
 Lista <- airquality[, 1]
 Lista
 
-colMeans(airquality$Ozone)
+df2 <- na.omit(Lista)
+df2
+mean(df2)
+
+elevado <- (df2 ^ 2)
