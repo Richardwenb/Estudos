@@ -10,3 +10,5 @@ df2
 mean(df2)
 
 elevado <- (df2 ^ 2)
+
+mean(df2)
