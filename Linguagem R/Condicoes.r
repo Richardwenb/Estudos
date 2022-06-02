@@ -5,6 +5,7 @@ if (5 == 5) 6 + 6
 
 if (5 == 7) 6 + 6 else "Condição não atendida"
 
+if (5 == 7) 6 + 6 else "Condição não atendida"
 #Melhores práticas
 
 if (5 == 7) {
@@ -12,6 +13,8 @@ if (5 == 7) {
 } else {
    "Condição não Atendida"
 }
+
+
 
 
 #Exemplo
