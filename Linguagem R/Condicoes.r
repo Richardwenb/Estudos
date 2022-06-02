@@ -1,4 +1,4 @@
-#Condições While, For e If
+#Condicoes While, For, If e ifelse
 
 # Se algo é verdade ele faz a condição
 if (5 == 5) 6 + 6
@@ -14,7 +14,9 @@ if (5 == 7) {
    "Condição não Atendida"
 }
 
-
+a = 10
+b = ifelse(a > 40, 'Maior ', 'igual a 10')
+print(b)
 
 
 #Exemplo
