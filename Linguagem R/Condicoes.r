@@ -14,11 +14,6 @@ if (5 == 7) {
    "Condição não Atendida"
 }
 
-a = 10000
-b = ifelse(a < 10000, 'Igual', 'Menor')
-print(b)
-
-
 #Exemplo
 
 idade <- c(25,30) # definindo o valor das posições
