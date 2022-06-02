@@ -14,8 +14,8 @@ if (5 == 7) {
    "Condição não Atendida"
 }
 
-a = 10
-b = ifelse(a > 40, 'Maior ', 'igual a 10')
+a = 10000
+b = ifelse(a < 10000, 'Igual', 'Menor')
 print(b)
 
 
