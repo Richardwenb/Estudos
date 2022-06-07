@@ -4,6 +4,7 @@ class(airquality$Ozone)
 
 Lista <- airquality[, 1]
 Lista
+class(Lista)
 
 df2 <- na.omit(Lista)
 df2
