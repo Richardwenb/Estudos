@@ -17,7 +17,7 @@ if (5 == 7) {
 #Exemplo
 
 idade <- c(25,30) # definindo o valor das posições
-nomes <- c("Joao", "Caina") # Definindo o nome das posições
+nomes <- c("Joao", "Caina", "Victor") # Definindo o nome das posições
 df <- data.frame(nomes, idade) #Criando um data frame com as posições
 if (df$idade[df$nomes == "Joao"] > df$idade[df$nomes == "Caina"]) {     #Faz a comparação de idade, se a idade de João for mais que a de Caina ele printa Mais velho João, se não printa mais velho Caina
     "Mais velho: Joao"
