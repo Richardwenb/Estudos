@@ -66,7 +66,7 @@ while True:
             print("Cliente não encontrado")
 
     elif opc == 5:
-        nome = input("Digite o Nome quem irá transferir: ")
+        nome = input("Digite o Nome de quem irá transferir: ")
         if banco.consultar(nome) != None:
             nome2 = input("Digite o nome do cliente quem irá Receber: ")
             valor = float(input("Digite o valor que deseja transferir: "))
@@ -78,6 +78,8 @@ while True:
             print("Cliente não encontrado")
             
     elif opc == 6:
+        print("Muito obrigado por utilizar nossos serviços")
         exit()
-
+    
+    print("")
     print("")
